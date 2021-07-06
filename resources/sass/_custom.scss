@@ -1,0 +1,123 @@
+// Dropdown menu-list
+.dropdown-hover {
+    position: relative;
+
+    .nav-link {
+
+        &:hover+.dropdown-menu:last-child {
+            display: block;
+        }
+    }
+
+    .dropdown-menu-hover {
+        top: 85%;
+
+        &:hover{
+            display: block;
+        }
+    }
+
+}
+
+
+
+// Sigle - page
+
+.single-page{
+    background-color: #e5e9ef;
+    border: 1px solid rgba(90,90,90,0.1);
+
+    .read-more{
+        cursor: pointer;
+        color: var(--primary);
+        text-transform: uppercase;
+    }
+
+    .show{
+        height: auto;
+    }
+
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        background-color: var(--white);
+    }
+
+    &__content{
+        position: relative;
+        height: 190px;
+        overflow: hidden;
+
+        .bottom-blur{
+            position: absolute;
+            width: 100%;
+            height: 7rem;
+            bottom: 0px;
+        }
+
+        .fadeout{
+            background-image: linear-gradient(rgb(229,233,239,0.1) 0%,rgb(229,233,239,1) 100%);
+        }
+
+
+        > h2{
+
+            font-weight: 700 !important;
+        }
+
+        p{
+            line-height: 1.8;
+            font-size: 20px;
+        }
+    }
+
+    &__alternative{
+
+        &-title{
+            background-color: #bcccdc;
+        }
+
+        &-item:nth-child(odd){
+            background-color: #e5e9ee;
+        }
+
+        &-item:nth-child(even){
+            background-color: #eff3f6;
+        }
+    }
+}
+
+
+.icon-input{
+    position: relative;
+
+    input{
+        padding-right: 30px;
+    }
+
+    .icon{
+        position: absolute;
+        top: 5px;
+        right: 6px;
+        padding: 0;
+
+        > svg {
+            margin: 0px !important;
+        }
+    }
+}
+
+
+.blog{
+
+
+    &-heading{
+        text-transform: uppercase;
+        font-size: 24px;
+        padding-bottom: 20px;
+        border-bottom: solid 1px #dcdbdb;
+    }
+}

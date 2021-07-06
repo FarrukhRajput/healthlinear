@@ -1,0 +1,28 @@
+footer{
+
+    background-color: #222;
+    color: var(--white);
+
+    padding: 2rem 0;
+
+    .footer-menu{
+        list-style: none;
+
+        > .menu-item{
+            padding-right: 10px;
+            float: left;
+
+            a {
+                color: var(--white) !important;
+
+                &:hover{
+                    color: $anchor-color !important;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+
+}

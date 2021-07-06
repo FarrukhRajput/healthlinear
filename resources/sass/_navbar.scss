@@ -1,0 +1,27 @@
+
+
+
+.navbar{
+    height: 60px !important;
+
+    // &-nav{
+    //     z-index: 9999;
+    //     background: var(--white);
+    // }
+
+    .nav-link{
+        font-size: 16px;
+        font-weight: 700;
+        color: #1c70d1 !important;
+    }
+}
+
+
+.surface__dark{
+
+    background-color: $surface-dark;
+    padding: 60px 1.5rem;
+    padding-bottom: 140px;
+    text-align: center;
+
+}

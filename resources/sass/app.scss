@@ -1,0 +1,30 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap');
+
+// DataTables
+@import "~datatables.net-bs4/css/dataTables.bootstrap4.css";
+@import "~datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css";
+
+
+// Variables
+@import 'variables';
+
+// Hamburger styles
+@import "./hamburgers//hamburgers.scss";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Custom
+@import 'custom';
+
+// My_homepage style
+@import "./homepage";
+
+// _Navabr styles
+@import "./navbar";
+@import "./search-box.scss";
+
+// _Footer styles
+@import "./footer";
