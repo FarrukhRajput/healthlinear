@@ -11127,6 +11127,32 @@ h3 {
 }
 
 .blog-heading {
+  font-size: 26px;
+  line-height: 30px;
+  color: black;
+}
+.blog-heading:hover {
+  text-decoration: none;
+}
+.blog-latest-heading {
+  font-size: 38px;
+  line-height: 44px;
+  color: black;
+}
+.blog-latest-heading:hover {
+  text-decoration: none;
+}
+.blog-sub-heading {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 22px;
+  color: black;
+}
+.blog-sub-heading:hover {
+  text-decoration: none;
+}
+.blog-section-heading {
   text-transform: uppercase;
   font-size: 24px;
   padding-bottom: 20px;

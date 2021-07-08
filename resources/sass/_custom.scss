@@ -111,10 +111,36 @@
 }
 
 
+@mixin blogHeadings ($fontsize , $lineHeight) {
+    font-size: $fontsize;
+    line-height: $lineHeight;
+    color: black;
+
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
 .blog{
 
 
     &-heading{
+        @include blogHeadings($fontsize : 26px , $lineHeight : 30px)
+
+    }
+
+    &-latest-heading{
+        @include blogHeadings($fontsize : 38px , $lineHeight: 44px)
+    }
+
+    &-sub-heading{
+        margin-top: 10px;
+        font-weight: 100;
+        @include blogHeadings($fontsize : 16px , $lineHeight : 22px)
+    }
+
+    &-section-heading{
         text-transform: uppercase;
         font-size: 24px;
         padding-bottom: 20px;
