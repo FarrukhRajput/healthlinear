@@ -77,7 +77,7 @@
 
     </div>
 
-    {{-- <x-footer /> --}}
+    <x-footer />
 
 
     <!-- Scripts -->
