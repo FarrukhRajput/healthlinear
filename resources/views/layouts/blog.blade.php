@@ -23,7 +23,6 @@
 <body>
     <div id="app">
 
-
         <header class="blog-header py-3 bg-dark">
             <div class="container">
                 <div class="row flex-nowrap justify-content-between align-items-center">

@@ -3,10 +3,12 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Models\Medicine;
+use App\Models\Post;
 
 
 // Website Controllers
 use App\Http\Controllers\Website\HomePageController;
+use App\Http\Controllers\Website\BlogController;
 
 
 
@@ -17,6 +19,7 @@ use App\Http\Controllers\BrandController;
 use App\Http\Controllers\MedicineController;
 use App\Http\Controllers\SymptomController;
 use App\Http\Controllers\SaltController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +49,11 @@ Route::group(['middleware' => 'auth' , 'prefix' => 'admin'], function () {
         'update'
     ]]);
 
+    Route::post('image_upload' , [PostController::class  , 'uploadImage'])->name('admin.image_upload');
+
+
+    Route::resource( 'post' , PostController::class);
+
     Route::post('salt/{id}', [SaltController::class , 'update'])->name('salt.update');
     Route::post('symptom/{id}', [SymptomController::class , 'update'])->name('symptom.update');
 
@@ -53,10 +61,8 @@ Route::group(['middleware' => 'auth' , 'prefix' => 'admin'], function () {
 
 
 Route::prefix('blog')->group(function () {
-    Route::get('/', function ()
-    {
-        return view('blog.index');
-    })->name('blog');
+    Route::get('/',[PostController::class , 'latest'])->name('blog');
+    Route::get('/{id}' ,[PostController::class , 'singlePost'])->name('blog.show');
 });
 
 

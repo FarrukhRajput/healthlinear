@@ -126,16 +126,18 @@
 
 
     &-heading{
-        @include blogHeadings($fontsize : 26px , $lineHeight : 30px)
-
+        display: block;
+        @include blogHeadings($fontsize : 24px , $lineHeight : 30px)
     }
 
     &-latest-heading{
-        @include blogHeadings($fontsize : 38px , $lineHeight: 44px)
+        display: block;
+        margin-bottom: 15px;
+        @include blogHeadings($fontsize : 34px , $lineHeight: 44px)
     }
 
     &-sub-heading{
-        margin-top: 10px;
+        margin-top: 15px;
         font-weight: 100;
         @include blogHeadings($fontsize : 16px , $lineHeight : 22px)
     }
@@ -143,8 +145,28 @@
     &-section-heading{
         text-transform: uppercase;
         font-size: 24px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         margin-bottom: 20px;
         border-bottom: solid 1px #dcdbdb;
     }
+
+}
+
+#previewImg{
+    width: 226px;
+    height: 177px;
+}
+
+
+.link{
+    cursor: pointer;
+    color: #1d68a7;
+    text-decoration: underline;
+}
+
+
+#app::after{
+    content: "";
+    clear: both;
+    display: table;
 }

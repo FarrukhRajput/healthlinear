@@ -35,6 +35,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdn.tiny.cloud/1/sunnwdr2omlhvsmarh4lv1chqxba843j7pg3qh4r4dev4og2/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
+
     @yield('script')
 </body>
 </html>

@@ -46,6 +46,21 @@
                 </li>
 
 
+                <li class="nav-item dropdown-hover">
+                    <a class="nav-link" href="">Posts</a>
+                    <div class="dropdown-menu dropdown-menu-hover" >
+                        <a class="dropdown-item" href="{{route('post.index')}}" >
+                            {{ __('All Posts') }}
+                        </a>
+
+                        <a class="dropdown-item" href="{{route('post.create')}}" >
+                            {{ __('Create Post') }}
+                        </a>
+
+                    </div>
+                </li>
+
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('symptom.index')}}">Symptoms</a>
                 </li>
