@@ -21,7 +21,16 @@
 <body>
     <div id="app">
 
-        <x-website-navbar/>
+        {{-- {{dd(Route::currentRouteName())}} --}}
+
+        @if (Route::currentRouteName() !== "login"
+                && Route::currentRouteName() !== "register"
+                && Route::currentRouteName() !== "password.request"
+                && Route::currentRouteName() !== "password.reset"
+            )
+            <x-website-navbar/>
+        @endif
+
 
         <main>
             @yield('content')

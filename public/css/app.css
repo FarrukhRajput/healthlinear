@@ -11180,6 +11180,13 @@ h3 {
   display: table;
 }
 
+.login-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .section h3 {
   text-align: center;
   margin-bottom: 2rem;
